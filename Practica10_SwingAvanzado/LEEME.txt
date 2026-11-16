@@ -1,0 +1,34 @@
+PRÁCTICA N° 10 - JAVA SWING AVANZADO (Lenguajes de Programación III)
+
+CÓMO ABRIRLO EN ECLIPSE
+1. File > Import > General > Existing Projects into Workspace.
+2. Select root directory: elige la carpeta "Practica10_SwingAvanzado" (o importa el .zip con "Select archive file").
+3. Finish. Ejecuta cada clase con clic derecho > Run As > Java Application.
+
+IMPORTANTE: las rutas de audio/video son relativas a la carpeta del proyecto
+(audio/aplausos.wav, video/ejemplo.mp4, etc.). No muevas esas carpetas.
+
+ACTIVIDADES (src/principal)
+- AppBinding.java          Binding de datos manual (Persona)
+- AppGraficos.java         Graphics: línea, rectángulo, óvalo, texto
+- AppGraficos2D.java       Graphics2D: antialiasing, traslación, rotación, escala, shear
+- AppGraficoBarras.java    Visualización de datos (barras)
+- AppAudio.java            Audio WAV con Clip
+- VideoExample.java        Video MP4 con JavaFX (ver abajo)
+
+EJERCICIOS PROPUESTOS
+- Ejercicio1_Producto.java
+- Ejercicio2_GraficoTemperaturas.java
+- Ejercicio3_EfectosSonido.java
+- Ejercicio4_ReproductorMusica.java
+
+VIDEO CON JAVAFX (solo VideoExample.java)
+Swing no reproduce video por sí solo. Descarga el SDK de JavaFX (openjfx.io), luego en Eclipse:
+Project > Properties > Java Build Path > Libraries > Classpath > Add Library > User Library
+(crea "JavaFX" con los .jar de la carpeta lib del SDK). Ejecuta con VM arguments:
+--module-path "RUTA_AL_SDK/lib" --add-modules javafx.controls,javafx.media,javafx.swing
+Si no lo vas a configurar, clic derecho en VideoExample.java > Build Path > Exclude,
+para que el resto del proyecto compile sin errores.
+
+Los archivos .wav y el .mp4 incluidos son sonidos/video de prueba generados para la práctica;
+puedes reemplazarlos por los tuyos manteniendo el mismo nombre.
